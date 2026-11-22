@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backapp
+  labels:
+    homework: backapp
+    training: block3
+spec:
+  containers:
+  - name: backapp
+    image: quay.io/drsylent/cubix/block3/homework-backapp:springboot4
+    ports:
+    - containerPort: 8080
+    env:
+    - name: APP_DEFAULT_MESSAGE
+      value: "backapp"
+    - name: JAVA_OPTS
+      value: "-Dspring.main.banner-mode=off"
+
+
