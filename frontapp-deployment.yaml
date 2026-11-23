@@ -28,4 +28,4 @@ spec:
           - name: JAVA_OPTS
             value: ""
           - name: BACK_URL
-            value: "http://backapp-service:8080"
+            value: "http://backapp:8080"
